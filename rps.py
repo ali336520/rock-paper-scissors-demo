@@ -4,6 +4,8 @@
 
 import random
 
+while True;
+
 user_action = input("Enter throw (rock, paper, scissors): ")
 ai_action = random.choice(["rock", "paper", "scissors"])
 
@@ -26,3 +28,7 @@ elif user_action == "scissors":
         print("Scissors cuts paper! You win!")
     else:
         print("Rock smashes scissors! You lose.")
+
+play_again = input("Do you want to play again? (yes/no): ").lower()
+if play_again != "yes":
+break 
